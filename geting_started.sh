@@ -13,7 +13,7 @@ read -p "Ip du rebond : " ipRebond
 ###############################################################
 
 echo "Mise a jour du système et installation des paquets de base"
-apt-get -qq update && apt-get -qq upgrade && apt-get -qq --yes --force-yes install vim openssh-client openssh-server qemu-guest-agent git
+apt-get -qq update && apt-get -qq upgrade && apt-get -qq --yes --force-yes install vim openssh-client openssh-server qemu-guest-agent git ncdu
 
 ###############################################################
 #
