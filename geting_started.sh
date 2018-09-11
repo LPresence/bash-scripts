@@ -51,3 +51,7 @@ sed -i 's/^#ListenAddress.*/#ListenAddress $ipRebond/g' $sshd_path
 echo "MaxAuthTries 3" >> $sshd_path
 
 #get current user : echo $(who am i | awk '{print $1}')
+
+#Ajout d'alias
+
+echo "alias ls='ls -lrtu'"  >> /home/$username/.bashrc
