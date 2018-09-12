@@ -55,3 +55,5 @@ echo "MaxAuthTries 3" >> $sshd_path
 #Ajout d'alias
 
 echo "alias ls='ls -lrtu'"  >> /home/$username/.bashrc
+echo "alias ipext='curl ipinfo.io/ip'"  >> /home/$username/.bashrc
+
