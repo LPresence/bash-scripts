@@ -12,3 +12,5 @@ add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/debian $
 #Mise a jour pour renouveller le cache puis installation de Docker-ce
 apt-get -qq update
 apt-get -qq --yes --force-yes install docker-ce
+
+echo "alias dockerps=docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'" >> /home/$username/.bashrc
